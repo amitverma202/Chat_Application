@@ -22,7 +22,7 @@ Welcome to Real Time Chat Application! This application provides a platform for 
 ## Project Links
 
 
-- GitHub Link: Soon... 
+- GitHub Link: [Link... ](https://github.com/amitverma202/Chat_Application.git)
 
 
 ## Table of Contents
