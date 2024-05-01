@@ -147,9 +147,11 @@ The project follows a structured directory layout for better organization:
 
 - **config/**
 - **coverage/**
-- **controllers**
-- **Jmeter Testing**
-- **test**
+- **models/**
+- **controllers/**
+- **Jmeter Testing/**
+- **Documentation/**
+- **test/**
 - **app.js**
 - **README.md**
 
