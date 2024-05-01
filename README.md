@@ -150,7 +150,7 @@ The project follows a structured directory layout for better organization:
 - **controllers**
 - **Jmeter Testing**
 - **test**
-- **server.js**
+- **app.js**
 - **README.md**
 
 ## Author
