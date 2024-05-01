@@ -76,7 +76,7 @@ To install the Chat Application locally, follow these steps:
 
 1.  Clone the repository from GitHub:
     
-    `git clone <repository-url>`
+    `git clone https://github.com/amitverma202/Chat_Application.git`
     
 2.  Navigate to the project directory:
     
