@@ -1,0 +1,164 @@
+Chat Application Documentation
+==============================
+
+Table of Contents
+-----------------
+
+1.  [Introduction](#introduction)
+2.  [Project Overview](#project-overview)
+3.  [Technologies Used](#technologies-used)
+4.  [Project Structure](#project-structure)
+5.  [Installation](#installation)
+6.  [Configuration](#configuration)
+7.  [Running the Application](#running-the-application)
+8.  [Testing](#testing)
+9.  [Performance Testing](#performance-testing)
+10.  [API Documentation](#api-documentation)
+11.  [Troubleshooting](#troubleshooting)
+12.  [Contributing](#contributing)
+13.  [License](#license)
+
+Introduction
+------------
+
+Welcome to the documentation for the Chat Application project. This document provides an overview of the project, its structure, how to install and configure it, how to run the application, perform testing, and more.
+
+Project Overview
+----------------
+
+The Chat Application is a real-time messaging platform that allows users to communicate with each other in real-time. It provides features such as user authentication, WebSocket-based messaging, message persistence using Redis and PostgreSQL, and integration with Apache Kafka for message streaming.
+
+Technologies Used
+-----------------
+
+The Chat Application is built using the following technologies:
+
+*   Node.js: JavaScript runtime environment
+*   Express.js: Web application framework for Node.js
+*   WebSocket: Protocol for full-duplex communication between client and server
+*   Redis: Key-value store for caching and message storage
+*   PostgreSQL: Relational database for message persistence
+*   Apache Kafka: Distributed streaming platform for message streaming
+*   Jest: JavaScript testing framework
+*   JMeter: Load testing tool for evaluating application performance
+
+Project Structure
+-----------------
+
+The project follows a modular structure, with separate folders for configuration, controllers, tests, and more. Here's a brief overview of the project structure:
+
+lua
+
+Copy code
+
+`Chat_Application/ 
+|-- config/ |   
+    |-- db.js          # PostgreSQL configuration   
+    |-- kafka.js       # Apache Kafka configuration    
+    |-- redis.js       # Redis configuration 
+|-- controllers/ |   
+    |-- authController.js     # User authentication controller   
+    |-- socketController.js   # WebSocket controller 
+|-- tests/ |   
+    |-- auth.test.js          # Authentication controller tests    
+    |-- socket.test.js        # WebSocket controller tests 
+|-- models/ |   
+    |-- users.sql          # user table schema    
+    |-- messages.sql       # message table schema 
+|-- app.js            # Main application file 
+|-- package.json      # Project dependencies and scripts 
+|-- README.md         # Project documentation`
+
+Installation
+------------
+
+To install the Chat Application locally, follow these steps:
+
+1.  Clone the repository from GitHub:
+    
+    `git clone <repository-url>`
+    
+2.  Navigate to the project directory:
+    
+    `cd Chat_Application`
+    
+3.  Install project dependencies:
+    
+    `npm install`
+    
+
+Configuration
+-------------
+
+Before running the application, you need to configure the following:
+
+1.  **Database Configuration**: Update the `db.js` file in the `config` folder with your PostgreSQL database credentials.
+2.  **Kafka Configuration**: Update the `kafka.js` file in the `config` folder with your Kafka broker details.
+3.  **Redis Configuration**: Update the `redis.js` file in the `config` folder with your Redis server details.
+
+Running the Application
+-----------------------
+
+To run the Chat Application, use the following command:
+
+`npm start`
+
+This will start the server, and you can access the application at `http://localhost:4000`.
+
+For Chat 
+--------
+
+Open console 1 and run this command :
+ -- wscat -c ws://localhost:8080
+ 
+Open console 2 and run this command : 
+ -- wscat -c ws://localhost:8080
+
+Testing
+-------
+
+To run unit and integration tests, use the following command:
+
+`npm test`
+
+This will execute all test suites and display the results.
+
+Performance Testing
+-------------------
+
+To perform load testing using JMeter, follow these steps:
+
+1.  Open JMeter and create a new test plan.
+2.  Configure the test plan with appropriate thread groups, HTTP request samplers, listeners, etc.
+3.  Run the test plan to simulate multiple users and evaluate the application's performance under load.
+
+API Documentation
+-----------------
+
+The Chat Application provides the following API endpoints:
+
+*   **Authentication Endpoints**:
+    
+    *   `/auth/register`: Register a new user.
+    *   `/auth/login`: Login with existing credentials.
+    *   `/auth/`: Get all users.
+*   **WebSocket Endpoint**:
+    
+    *   `/ws`: WebSocket endpoint for real-time messaging.
+
+For detailed documentation of each endpoint and their request/response formats, refer to the source code or API documentation provided.
+
+Troubleshooting
+---------------
+
+If you encounter any issues while running or configuring the application, refer to the troubleshooting section in the README.md file or seek assistance from the project maintainers.
+
+Contributing
+------------
+
+Contributions to the Chat Application project are welcome! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request. Be sure to follow the project's contribution guidelines.
+
+License
+-------
+
+The Chat Application project is licensed under the MIT License.

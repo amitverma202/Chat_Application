@@ -1,0 +1,10 @@
+1. https://expressjs.com/
+2. https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
+3. Redis Documentation
+4. https://www.postgresql.org/docs/
+5. https://kafka.apache.org/documentation/
+6. Jest Documentation
+7. https://jmeter.apache.org/usermanual/index.html
+8. Testing WebSockets with Jest
+9. Jest Testing Best Practices
+10. youtube references
